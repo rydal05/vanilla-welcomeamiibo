@@ -9,6 +9,7 @@ typedef enum {
     VPI_ACTION_TOGGLE_RECORDING,
     VPI_ACTION_DISCONNECT,
     VPI_ACTION_TOGGLE_FULLSCREEN,
+    VPI_ACTION_TESTMIIBO,
 } vpi_extra_action_t;
 
 void vpi_menu_init(vui_context_t *vui);

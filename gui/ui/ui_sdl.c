@@ -161,6 +161,7 @@ void init_gamepad(vui_context_t *ctx)
     ctx->default_key_map[SDL_SCANCODE_F12] = VPI_ACTION_SCREENSHOT;
     ctx->default_key_map[SDL_SCANCODE_F11] = VPI_ACTION_TOGGLE_FULLSCREEN;
     ctx->default_key_map[SDL_SCANCODE_ESCAPE] = VPI_ACTION_DISCONNECT;
+    ctx->default_key_map[SDL_SCANCODE_F3] = VPI_ACTION_TESTMIIBO;
 }
 
 void find_valid_controller(vui_sdl_context_t *sdl_ctx)

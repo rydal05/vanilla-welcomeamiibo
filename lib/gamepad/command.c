@@ -180,7 +180,10 @@ void handle_generic_packet(gamepad_context_t *info, int skt, GenericPacket *requ
             response.generic_cmd_header.error_code = 0;
             break;
         }
+        
         }
+        break;
+    case SERVICE_ID_AMIIBO:
         break;
     }
 
@@ -226,7 +229,8 @@ void handle_time_packet(int skt, TimePacket *request)
 }
 
 void handle_command_packet(gamepad_context_t *info, int skt, CmdHeader *request)
-{
+{  
+    printf("HEAD OF NEW PACKET\n");
 	vanilla_log("packet_type: %u, query_type: %u, payload_size: 0x%X", request->packet_type, request->query_type, request->payload_size);
     switch (request->packet_type)
     {
